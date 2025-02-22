@@ -270,12 +270,14 @@ export default function App() {
 				<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
 					<div className="grid grid-cols-1 sm:grid-cols-4 gap-y-16 gap-x-12">
 						<div className="sm:col-span-2">
-							<form action="#" className="mt-6">
+							<form
+								action="https://formspree.io/f/xqazqwdo"
+								method="POST"
+								className="mt-6"
+							>
 								<p>Shoot me a message for collaboration</p>
 								<div className="mt-3">
-									<label htmlFor="email" className="">
-										Email
-									</label>
+									<label htmlFor="email">Email</label>
 									<input
 										type="email"
 										name="email"
@@ -286,9 +288,7 @@ export default function App() {
 								</div>
 
 								<div className="mt-3">
-									<label htmlFor="message" className="">
-										Enter your message
-									</label>
+									<label htmlFor="message">Enter your message</label>
 									<textarea
 										name="message"
 										id="message"
