@@ -1,5 +1,3 @@
-import { Link } from "react-router";
-
 interface NavProps {
 	close?: () => void;
 }
@@ -15,15 +13,15 @@ export default function Nav({ close }: NavProps) {
 		<nav className="md:flex">
 			<div className="grid gap-y-6 md:space-x-10 md:items-center md:justify-center md:flex">
 				{NAV_LINKS.map((link, id) => (
-					<Link
+					<a
 						key={id}
-						to={link.href}
+						href={link.href}
 						title={link.title}
 						onClick={() => close && close()}
 						className="text-xs font-bold tracking-widest text-gray-900 uppercase transition-all duration-200 hover:text-indigo-600"
 					>
 						{link.title}
-					</Link>
+					</a>
 				))}
 			</div>
 		</nav>

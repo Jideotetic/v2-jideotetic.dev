@@ -114,7 +114,7 @@ export default function App() {
 											<div className="flex">
 												<button
 													onClick={() => setIsResumeOpen(true)}
-													className="inline-flex items-center justify-center px-6 py-2 sm:py-2.5 text-base font-semibold text-white transition-all duration-200 bg-gray-900 rounded-lg sm:text-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+													className="inline-flex items-center cursor-pointer justify-center px-6 py-2 sm:py-2.5 text-base font-semibold text-white transition-all duration-200 bg-gray-900 rounded-lg sm:text-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
 												>
 													VIEW RESUME
 												</button>
@@ -132,7 +132,7 @@ export default function App() {
 						<div className="hidden md:flex">
 							<button
 								onClick={() => setIsResumeOpen(true)}
-								className="inline-flex items-center justify-center px-6 py-2 sm:py-2.5 text-base font-semibold text-white transition-all duration-200 bg-gray-900 rounded-lg sm:text-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+								className="inline-flex items-center cursor-pointer justify-center px-6 py-2 sm:py-2.5 text-base font-semibold text-white transition-all duration-200 bg-gray-900 rounded-lg sm:text-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
 							>
 								VIEW RESUME
 							</button>
@@ -209,7 +209,11 @@ export default function App() {
 									>
 										<FaLinkedin />
 									</Link>
-									<button onClick={handleClick} title="Connect on whatsapp">
+									<button
+										onClick={handleClick}
+										title="Connect on whatsapp"
+										className="cursor-pointer"
+									>
 										<IoLogoWhatsapp />
 									</button>
 									<Dialog
