@@ -1,10 +1,9 @@
 import type { ReactElement } from "react";
-import { DiMsqlServer } from "react-icons/di";
 import { FaCode, FaReact } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { MdCss, MdHtml, MdJavascript } from "react-icons/md";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiPrisma, SiReactrouter, SiRedux } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiReactrouter } from "react-icons/si";
 import { Link } from "react-router";
 import { Fragment } from "react/jsx-runtime";
 
